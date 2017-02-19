@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>ui1-test</title>
+		<!--兼容ie不能使用h5元素-->
+		<!--[if lt IE9]> 
+			<script> 
+			   (function() {
+				    if (! 
+					    /*@cc_on!@*/
+					    0) return;
+					    var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+					    var i= e.length;
+				    while (i--){
+				        document.createElement(e[i])
+				    } 
+			    })() 
+			</script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/test.css" />
+		<style>
+			*{
+				padding:0;
+				margin:0;
+			}
+			body{
+				font-family: "微软雅黑";
+				font-size:13px;
+			}
+			header,footer{
+				width:100%;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+			section{
+				width:80%;
+				margin:  0 auto;
+			}
+			/*logo*/
+			.H_LL{
+				width:100%;
+				margin-top: 30px;
+				
+			}
+			.H_logo{
+				margin-left: 100px;
+			}
+			.H_loading{
+				margin-right: 130px;
+			}
+			.H_loading ul{
+				margin-bottom: 10px;
+				margin-left: 80px;
+			}
+			.H_loading li{
+				margin-left: 10px;
+			}
+			/*导航样式*/
+			.H_nav{
+				margin-top:20px;
+				width:100%;
+				height: 30px;
+				background: #EF3E34;
+			}
+			.H_nav ul{
+				display: block;
+				width:80%;
+				margin: 0 auto;
+			}
+			.H_nav_li{
+				padding:0 25px;
+				line-height: 30px;
+			}
+			.H_nav_li:hover{
+				background: #2D7CE6;
+			}
+			.H_nav_li a{
+				color:#fff;
+			}
+			
+			/*banner图*/
+			.banner{
+				margin-top: 20px;
+				width:100%;
+				height:350px;
+				background: blue;
+			}
+			.b_items{
+				right: 30px;
+				top:300px;
+			}
+			.b_items li{
+				display: inline-block;
+				width: 30px;
+				height:30px;
+				line-height: 30px;
+				margin-left: 30px;
+				background: #2D7CE6;
+			}
+			.b_items li:hover{
+				background: #EF3E34;
+			}
+			
+			.new{
+				width: 100%;
+				margin: 20px 0;
+				height:350px;
+			}
+			.newperpo,.newitems{
+				width:32%;
+				height: 350px;
+				background: pink;
+				margin-left: 10px;
+			}
+			.footer{
+				height:70px;
+				background: #EF3E34;
+			}
+			.F_nav{
+				width:700px;
+				padding-top: 10px;
+				margin:0 auto;
+			}
+			.f_nav_li{
+				margin-left: 20px;
+			}
+			.f_p,.f_nav_li a{
+				color:#ddd;
+				font-size:12px;
+			}
+			.f_p{
+				width: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="H_LL clear">
+				<div class="H_logo fl">
+					<img src="img/ui1-logo.png" />
+				</div>
+				<div class="H_loading fr">
+					<ul class="clear">
+						<li class="fl"><a href="">登录</a></li>
+						<li class="fl"><a href="">注册</a></li>
+						<li class="fl"><a href="">加入我们</a></li>
+					</ul>
+					<div class="H_l_s">
+						<input type="text" name="select"/>&nbsp;<button>搜索</button>
+					</div>
+				</div>
+			</div>
+			<div class="H_nav">
+				<ul class="clear">
+					<li class="H_nav_li fl"><a href="">首页</a></li>
+					<li class="H_nav_li fl"><a href="">关于我们</a></li>
+					<li class="H_nav_li fl"><a href="">国际资讯</a></li>
+					<li class="H_nav_li fl"><a href="">已过风情</a></li>
+					<li class="H_nav_li fl"><a href="">咨询服务</a></li>
+					<li class="H_nav_li fl"><a href="">会员中心</a></li>
+					<li class="H_nav_li fl"><a href="">导游流程</a></li>
+					<li class="H_nav_li fl"><a href="">在线留言</a></li>
+					<li class="H_nav_li fl"><a href="">联系我们</a></li>
+				</ul>
+			</div>
+		</header>
+		<section class="pr">
+			<div class="banner"></div>
+			<div class="b_items pa">
+				<ul class="clear">
+					<li class="fl tc">1</li>
+					<li class="fl tc">2</li>
+					<li class="fl tc">3</li>
+					<li class="fl tc">4</li>
+				</ul>
+			</div>
+		</section>
+		<section class="">
+			<div class="clear new">
+				<div class="newperpo fl">
+					<div class="new_x">新闻资讯</div>
+					<p>建档立卡快乐垃圾打啊<span>2010-90-80-12-00</span></p>
+					<p>建档立卡快乐垃圾打啊<span>2010-90-80-12-00</span></p>
+					<p>建档立卡快乐垃圾打啊<span>2010-90-80-12-00</span></p>
+					<p>建档立卡快乐垃圾打啊<span>2010-90-80-12-00</span></p>
+					<p>建档立卡快乐垃圾打啊<span>2010-90-80-12-00</span></p>
+					<p><a>更多...</a></p>
+				</div>
+				<div class="newitems fl"></div>
+				<div class="newitems fl"></div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer">
+				<div class="F_nav">
+					<ul class="clear">
+						<li class="f_nav_li fl"><a href="">首页</a></li>
+						<li class="f_nav_li fl"><a href="">关于我们</a></li>
+						<li class="f_nav_li fl"><a href="">国际资讯</a></li>
+						<li class="f_nav_li fl"><a href="">已过风情</a></li>
+						<li class="f_nav_li fl"><a href="">咨询服务</a></li>
+						<li class="f_nav_li fl"><a href="">会员中心</a></li>
+						<li class="f_nav_li fl"><a href="">导游流程</a></li>
+						<li class="f_nav_li fl"><a href="">在线留言</a></li>
+						<li class="f_nav_li fl"><a href="">联系我们</a></li>
+					</ul>
+				</div>
+				<p class="mc f_p">Copyright 2017 Administrator. All Rights Reserved. </p>
+			</div>
+		</footer>
+		<script>
+			//ajax
+			var xmlhttp;
+			var url = "ajax.json";
+			function loadXMLDoc(url,cfunc){
+				xmlhttp = new XMLHttpRequest()|| new ActiveXObject();
+				xmlhttp.onreadystatechange = cfunc;
+				xmlhttp.open("GET",url,true);
+				xmlhttp.send();
+			}
+			function myFunction(){
+				loadXMLDoc(url,function(){
+					if(xmlhttp.readyState ==4 && xmlhttp.status == 200){
+						var json = JSON.parse(xmlhttp.responseText);
+						alert(json.name+"===="+json.pass);
+					}
+				});
+				
+			}
+			//myFunction();
+			//轮播图
+		</script>
+	</body>
+</html>

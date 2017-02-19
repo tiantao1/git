@@ -1,0 +1,56 @@
+/*格式化样式*/
+/*格式化样式*/
+
+
+/*html5*/
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;} 
+table {border-collapse:collapse;border-spacing:0;} 
+fieldset,img {border:0} 
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal} 
+ol,ul {list-style:none} 
+caption,th {text-align:left} 
+q:before,q:after {content:''} 
+abbr,acronym { border:0}
+input{width: 180px;}
+.mc{margin: 0 auto;}
+.fb{font-weight:bold}/*字体加粗*/
+.fn{font-weight:normal}
+.t2{text-indent:2em}
+/*定位*/
+.tl{text-align:left}
+.tc{text-align:center}
+.tr{text-align:right}
+.fl{float:left;display:inline}
+.fr{float:right;display:inline}
+.cb{clear:both}
+.cl{clear:left}
+.cr{clear:right}
+.vm{vertical-align:middle} /*设置元素的对齐方式*/
+.pr{position:relative} 
+.pa{position:absolute}
+.abs-right{position:absolute;right:0}/*向右绝对定位*/ 
+.hidden{visibility:hidden} /*元素规定是否可见*/
+.none{display:none}
+/*css定义超链接四个状态也有顺序的。*/
+a:link, a:visited {
+text-decoration: none;
+color: #1F376D;
+}
+a:hover, a:active {
+text-decoration: none;
+color: #BD0A01;
+border: none;
+}
+/*以上语句分别定义了"链接、已访问过的链接、鼠标停在上方时、点下鼠标时"的样式。
+注意，必须按以上顺序写，否则显示可能和你预想的不一样。记住它们的顺序是“LVHA”。*/
+/*======万能Float闭合======*/
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
+
+.clear {display: inline-block;} /* for IE/Mac */
